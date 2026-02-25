@@ -24,25 +24,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Stripe Checkout Logic
+    // Payment Link Logic
     const basicPlanButton = document.getElementById('basic-plan-cta');
     if (basicPlanButton) {
-        const stripe = Stripe('pk_live_51Som61JuuVUrfrDt0NXKohrahswLuLP6KBrDzVghVPw8DxJN87kjHY6GSM6lx4gjvhwcBRHEGuQ729lxQwiUsV6U00HT3hYabh');
-        
         basicPlanButton.addEventListener('click', function(e) {
-            alert('Button clicked! Diagnosing issue.'); // <-- DEBUGGING LINE
             e.preventDefault();
-            stripe.redirectToCheckout({
-                lineItems: [{ price: 'price_1T4UaPJuuVUrfrDtNMNjd5SO', quantity: 1 }],
-                mode: 'payment',
-                successUrl: window.location.origin + '/?payment=success',
-                cancelUrl: window.location.origin + '/?payment=cancel',
-            })
-            .then(function(result) {
-                if (result.error) {
-                    alert(result.error.message);
-                }
-            });
+            window.location.href = 'https://buy.stripe.com/bJe3cw7Fg2zD2CygL37EQ00';
         });
     }
 
