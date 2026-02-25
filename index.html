@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Editing Bot</title>
+    <link rel="stylesheet" href="style.css">
+            <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">EditingBot</div>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Your Personal YouTube Video Editor</h1>
+                <p>Automate your editing process and create stunning videos in minutes.</p>
+                <a href="#pricing" class="cta-button">Get Started</a>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Automatic Edits</h3>
+                    <p>Our bot automatically removes silences, adds background music, and more.</p>
+                </div>
+                <div class="feature">
+                    <h3>Customizable Settings</h3>
+                    <p>Tailor the editing process to your specific needs and style.</p>
+                </div>
+                <div class="feature">
+                    <h3>Fast Turnaround</h3>
+                    <p>Get your edited videos back in a fraction of the time it takes to do it manually.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <h2>Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-tier">
+                    <h3>Basic</h3>
+                    <p class="price">$10 one time</p>
+                    <ul>
+                        <li>Unlimited non-ai videos</li>
+                    </ul>
+                    <a href="#" id="basic-plan-cta" class="cta-button">Choose Plan</a>
+                </div>
+                <div class="pricing-tier">
+                    <h3>Pro AI</h3>
+                    <p class="price">In Development</p>
+                    <ul>
+                        <li>Up to 30 videos per month</li>
+                        <li>Advanced editing features</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <a href="#" class="cta-button disabled">Coming Soon</a>
+                </div>
+                <div class="pricing-tier">
+                    <h3>Enterprise</h3>
+                    <p class="price">Contact Us</p>
+                    <ul>
+                        <li>Unlimited videos</li>
+                        <li>Custom features</li>
+                        <li>Dedicated support</li>
+                    </ul>
+                    <a href="#" class="cta-button">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <div id="contact-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit" class="cta-button">Send</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div id="success-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Payment Successful!</h2>
+                <p>Thank you for your purchase. Here is your download link:</p>
+                <a href="https://drive.google.com/file/d/1-vaJKb5arU08xdBgm2oCwLlKmTHXixYI/view?usp=drive_link" target="_blank" class="cta-button">Download Now</a>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EditingBot. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
