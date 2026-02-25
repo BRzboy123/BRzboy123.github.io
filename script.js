@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const stripe = Stripe('pk_live_51Som61JuuVUrfrDt0NXKohrahswLuLP6KBrDzVghVPw8DxJN87kjHY6GSM6lx4gjvhwcBRHEGuQ729lxQwiUsV6U00HT3hYabh');
         
         basicPlanButton.addEventListener('click', function(e) {
+            alert('Button clicked! Diagnosing issue.'); // <-- DEBUGGING LINE
             e.preventDefault();
             stripe.redirectToCheckout({
                 lineItems: [{ price: 'price_1T4UaPJuuVUrfrDtNMNjd5SO', quantity: 1 }],
